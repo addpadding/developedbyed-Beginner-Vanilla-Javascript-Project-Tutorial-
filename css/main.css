@@ -32,7 +32,7 @@ form input {
   background-color: #fff;
   outline: none;
 }
-form button {
+form .btn_plus {
   padding: 0.5rem;
   font-size: 2rem;
   border: none;
@@ -41,7 +41,7 @@ form button {
   cursor: pointer;
   transition: 0.3s;
 }
-form button:hover {
+form .btn_plus:hover {
   color: #fff;
   background-color: #d88771;
 }
