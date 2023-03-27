@@ -1,5 +1,5 @@
 const input = document.querySelector(".input")
-const btn_plus = document.querySelector(".btn")
+const btn_plus = document.querySelector(".btn_plus")
 const ul_list = document.querySelector(".ul_list")
 
 btn_plus.addEventListener("click", add_todo)

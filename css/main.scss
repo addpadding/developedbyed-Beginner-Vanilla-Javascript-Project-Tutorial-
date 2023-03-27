@@ -44,7 +44,8 @@ form {
         padding: 0.5rem;
         font-size: 2rem;
         border: none;
-        color: #ff6f47;
+        color: $mainColor;
+        ;
         background-color: #e7e7e7;
         cursor: pointer;
         transition: 0.3s;
@@ -52,6 +53,55 @@ form {
         &:hover {
             color: #fff;
             background-color: #d88771;
+        }
+    }
+}
+
+// 001
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // 002
+    .ul_list {
+        min-width: 30%;
+        list-style: none;
+
+        // 003
+        .div_todo {
+            margin: 0.5rem;
+            background-color: #fff;
+            color: #000;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            // 004
+            .li_item {
+                flex: 1;
+            }
+
+            // 004
+            .complete_btn {
+                color: #fff;
+                background-color: $mainColor;
+                border: none;
+                padding: 1rem;
+                cursor: pointer;
+                font-size: 1rem;
+            }
+
+            // 004
+            .trash_btn {
+                color: #fff;
+                background-color: rgb(73, 204, 73);
+                border: none;
+                padding: 1rem;
+                cursor: pointer;
+                font-size: 1rem;
+            }
         }
     }
 }

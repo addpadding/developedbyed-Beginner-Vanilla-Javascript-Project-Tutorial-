@@ -46,4 +46,42 @@ form .btn_plus:hover {
   background-color: #d88771;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .ul_list {
+  min-width: 30%;
+  list-style: none;
+}
+.container .ul_list .div_todo {
+  margin: 0.5rem;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .ul_list .div_todo .li_item {
+  flex: 1;
+}
+.container .ul_list .div_todo .complete_btn {
+  color: #fff;
+  background-color: #ff6f47;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.container .ul_list .div_todo .trash_btn {
+  color: #fff;
+  background-color: rgb(73, 204, 73);
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
 /*# sourceMappingURL=main.css.map */
