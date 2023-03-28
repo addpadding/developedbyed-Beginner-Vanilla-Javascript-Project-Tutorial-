@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -37,13 +38,37 @@ form .btn_plus {
   font-size: 2rem;
   border: none;
   color: #ff6f47;
-  background-color: #e7e7e7;
+  background-color: #f7fffe;
   cursor: pointer;
+}
+form .btn_plus i {
   transition: 0.3s;
 }
-form .btn_plus:hover {
-  color: #fff;
-  background-color: #d88771;
+form .btn_plus i:hover {
+  transform: rotate(180deg);
+}
+form .select_box {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+form .select_box::after {
+  content: "▼";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff6f47;
+  padding: 1rem;
+  pointer-events: none;
+}
+form .select_box .filter_select {
+  appearance: none;
+  outline: none;
+  border: none;
+  color: #ff6f47;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
 }
 
 .container {
@@ -69,6 +94,10 @@ form .btn_plus:hover {
   text-decoration: line-through;
   opacity: 0.5;
 }
+.container .ul_list .div_todo.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
 .container .ul_list .div_todo .li_item {
   flex: 1;
   padding: 0 0.5rem;
@@ -80,6 +109,7 @@ form .btn_plus:hover {
   padding: 1rem;
   cursor: pointer;
   font-size: 1rem;
+  transition: 0.3s;
 }
 .container .ul_list .div_todo .complete_btn i {
   pointer-events: none;
@@ -91,6 +121,7 @@ form .btn_plus:hover {
   padding: 1rem;
   cursor: pointer;
   font-size: 1rem;
+  transition: 0.3s;
 }
 .container .ul_list .div_todo .trash_btn i {
   pointer-events: none;

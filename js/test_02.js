@@ -5,6 +5,7 @@ var ul_list = document.querySelector(".ul_list");
 btn_plus.addEventListener("click", add_todo);
 ul_list.addEventListener("click", delete_check);
 
+
 function add_todo(e) {
     e.preventDefault();
 
@@ -12,6 +13,7 @@ function add_todo(e) {
     div.classList.add("div_todo");
 
     var li = document.createElement("li");
+    // =====
     li.innerText = input.value;
     li.classList.add("li_item");
     div.appendChild(li);
@@ -28,23 +30,22 @@ function add_todo(e) {
 
     ul_list.appendChild(div);
 
-    input.value = "";
+    // ==========
+    input.value = ""
 }
 
+
+// =======
 function delete_check(e) {
-    var item = e.target;
+    var item = e.target
 
     if (item.classList[0] === "trash_btn") {
-        var parent = item.parentElement;
-        parent.classList.add("fall");
-
-        parent.addEventListener("transitionend", function () {
-            parent.remove();
-        });
+        var parent = item.parentElement
+        parent.remove()
     }
 
     if (item.classList[0] === "complete_btn") {
-        var parent = item.parentElement;
-        parent.classList.toggle("completed");
+        var parent = item.parentElement
+        parent.classList.toggle("completed")
     }
 }
