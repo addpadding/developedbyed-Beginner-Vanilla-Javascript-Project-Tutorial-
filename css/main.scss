@@ -70,6 +70,13 @@ form {
 
         // 003
         .div_todo {
+
+            //*============
+            &.completed {
+                text-decoration: line-through;
+                opacity: 0.5;
+            }
+
             margin: 0.5rem;
             background-color: #fff;
             color: #000;
@@ -77,10 +84,12 @@ form {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            transition: 0.5s ease;
 
             // 004
             .li_item {
                 flex: 1;
+                padding: 0 0.5rem;
             }
 
             // 004
@@ -91,6 +100,11 @@ form {
                 padding: 1rem;
                 cursor: pointer;
                 font-size: 1rem;
+
+                // 005
+                i {
+                    pointer-events: none;
+                }
             }
 
             // 004
@@ -101,6 +115,11 @@ form {
                 padding: 1rem;
                 cursor: pointer;
                 font-size: 1rem;
+
+                // 005
+                i {
+                    pointer-events: none;
+                }
             }
         }
     }
