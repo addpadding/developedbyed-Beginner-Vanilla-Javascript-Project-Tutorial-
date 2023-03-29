@@ -87,6 +87,7 @@ form {
     }
 }
 
+
 // 001
 .container {
     display: flex;
@@ -102,13 +103,13 @@ form {
         .div_todo {
 
             //*============
-            &.completed {
+            &.completed_class {
                 text-decoration: line-through;
                 opacity: 0.5;
             }
 
             //*============
-            &.fall {
+            &.fall_class {
                 transform: translateY(8rem) rotateZ(20deg);
                 opacity: 0;
             }

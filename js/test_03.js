@@ -36,7 +36,8 @@ function delete_check(e) {
 
     if (item.classList[0] === "trash_btn") {
         var parent = item.parentElement;
-        parent.classList.add("fall");
+        // ================
+        parent.classList.add("fall_class");
         // ================
         parent.addEventListener("transitionend", function () {
             parent.remove();
@@ -45,6 +46,6 @@ function delete_check(e) {
 
     if (item.classList[0] === "complete_btn") {
         var parent = item.parentElement;
-        parent.classList.toggle("completed");
+        parent.classList.toggle("completed_class");
     }
 }

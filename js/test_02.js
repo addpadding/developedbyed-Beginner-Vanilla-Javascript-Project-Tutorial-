@@ -46,6 +46,6 @@ function delete_check(e) {
 
     if (item.classList[0] === "complete_btn") {
         var parent = item.parentElement
-        parent.classList.toggle("completed")
+        parent.classList.toggle("completed_class")
     }
 }

@@ -90,11 +90,11 @@ form .select_box .filter_select {
   align-items: center;
   transition: 0.5s ease;
 }
-.container .ul_list .div_todo.completed {
+.container .ul_list .div_todo.completed_class {
   text-decoration: line-through;
   opacity: 0.5;
 }
-.container .ul_list .div_todo.fall {
+.container .ul_list .div_todo.fall_class {
   transform: translateY(8rem) rotateZ(20deg);
   opacity: 0;
 }
